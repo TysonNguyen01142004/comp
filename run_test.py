@@ -23,7 +23,7 @@ main(
     ft=1,
     xsolv=0,
     method="RAMP",
-    ramp_q=0.5,
+    ramp_q=50,
 )
 
 
