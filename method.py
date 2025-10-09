@@ -259,7 +259,7 @@ def main(
         # -------------------------
         if ft == 0:
             # sensitivity filter (original code uses x * dc)
-            dc[:] = np.asarray((H * (x * dc))[:, None].T / Hs)[:, 0] / np.maximum(
+            dc[:] = np.asarray((H * (x * dc))[:, None] / Hs)[:, 0] / np.maximum(
                 0.001, x
             )
         elif ft == 1:
